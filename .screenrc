@@ -1,0 +1,16 @@
+# no annoying audible bell, please
+vbell on    
+
+# skip splash screen
+startup_message off
+                                                                                                                          
+# detach on hangup
+autodetach on    
+
+defscrollback 9000
+
+# for Emacs users, change the escape sequence to Ctrl-Z instead of Ctrl-A
+escape ^Jq
+
+# add window names at the bottom
+caption always "%?%F%{= kg}%:%{= kK}%? %L=%-Lw%50L>%{+b}*%n%f %t*%{-b}%+Lw%<"

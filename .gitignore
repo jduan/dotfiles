@@ -1,0 +1,17 @@
+.netrwhist
+.viminfo
+.ssh/
+# vim
+*~
+*.swp
+
+# eclipse
+.classpath
+.project
+eclipse-bin/
+eclipse-build/
+
+# p4 and apollo
+.p4config
+build
+apollo-overrides
