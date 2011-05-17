@@ -9,9 +9,9 @@
     lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 [core]
     editor = vim
+	excludesfile = /home/jduan/.gitignore
 [color]
 	ui = auto
-	excludesfile = /home/jduan/.gitignore
 [github]
 	user = jduan
 	token = 1c29ea8a13206dc84afeb23312fb2daa
