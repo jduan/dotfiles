@@ -8,7 +8,11 @@ Dir.chdir(dir)
 Dir.glob('.*').each do |file|
     if (file != "." && file != ".." && file != ".git")
         path = dir + file
-        puts "create symlink: #{path}"
-        `ln -s #{path} ~/#{file}`
+        if File.exists?(path)
+            puts "symlink #{path} exists already!"
+        else 
+            puts "create symlink: #{path}"
+            `ln -s #{path} ~/#{file}`
+        end
     end
 end
