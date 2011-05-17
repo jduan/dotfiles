@@ -70,3 +70,20 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+# 'screen'
+alias sc='screen'
+alias scl='screen -list'
+alias scx='screen -x'
+
+alias tf='tail -f'
+
+alias ssh='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+alias psef='ps -ef | grep -i '
+alias grep='grep -irn --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
