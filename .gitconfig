@@ -2,6 +2,8 @@
     name = Jingjing Duan
     email = duanjingjing@gmail.com
 [alias]
+    a = add
+    cm = commit -m
     c = commit
     co = checkout
     b = branch
