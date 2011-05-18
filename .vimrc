@@ -324,5 +324,5 @@ let mapleader = "\\"
 map <Leader>n :NERDTreeToggle<CR> 
 
 " use solarized.vim color scheme
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
