@@ -2,8 +2,10 @@
     name = Jingjing Duan
     email = duanjingjing@gmail.com
 [alias]
+    c = commit
     co = checkout
     b = branch
+    d = diff
     s = status
     unstage = reset HEAD --
     lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
