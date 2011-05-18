@@ -3,16 +3,18 @@
 # ignore files below:
 #   .git
 
-dir = Dir.home + "/dotfiles/"
-Dir.chdir(dir)
+target_dir = Dir.home + "/dotfiles/"
+src_dir = Dir.home + "/"
+Dir.chdir(target_dir)
 Dir.glob('.*').each do |file|
     if (file != "." && file != ".." && file != ".git")
-        path = dir + file
-        if File.exists?(path)
-            puts "symlink #{path} exists already!"
+        src_path = src_dir + file
+        target_path = target_dir + file
+        if File.exists?(src_path)
+            puts "symlink #{src_path} exists already!"
         else 
-            puts "create symlink: #{path}"
-            `ln -s #{path} ~/#{file}`
+            puts "create symlink: #{src_path}"
+            `ln -s #{target_path} #{src_path}`
         end
     end
 end
