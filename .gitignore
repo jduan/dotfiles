@@ -15,3 +15,4 @@ eclipse-build/
 .p4config
 build
 apollo-overrides
+backup/
