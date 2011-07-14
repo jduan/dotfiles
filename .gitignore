@@ -16,3 +16,7 @@ eclipse-build/
 build
 apollo-overrides
 backup/
+
+# ctags
+tags
+cscope.out
