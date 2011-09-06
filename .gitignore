@@ -20,3 +20,6 @@ backup/
 # ctags
 tags
 cscope.out
+
+# every branch has a README that should be ingored
+README
