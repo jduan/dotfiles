@@ -7,6 +7,11 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Source inputrc
+if [ -f $HOME/.inputrc ]; then
+	. $HOME/.inputrc
+fi
+
 unset USERNAME
 # bash itself related
 export HISTCONTROL=ignoreboth
