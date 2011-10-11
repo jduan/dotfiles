@@ -96,3 +96,8 @@ alias ls='ls --color=tty'
 
 # bundle
 alias be='bundle exec'
+
+# p4
+alias p4changes='p4  changes -u jduan -l | less'
+
+export LANG=en_US
