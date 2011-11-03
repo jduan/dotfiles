@@ -4,6 +4,7 @@
 [alias]
     a = add
     cm = commit -m
+    cma = commit --amend
     c = commit
     co = checkout
     b = branch
