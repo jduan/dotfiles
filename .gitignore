@@ -5,6 +5,9 @@
 *~
 *.swp
 
+# git
+.gitignore
+
 # eclipse
 .classpath
 .project

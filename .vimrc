@@ -29,7 +29,7 @@ abbr jj \bi<CR>\item<CR>\ei<Esc>kA
 " tab completion: longest only
 set wildmode=longest,list
 " set wrap
-set textwidth=70
+set textwidth=80
 
 "
 " To make my own life easier, here's the list of keymappings provided by my
