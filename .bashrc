@@ -103,3 +103,10 @@ alias p4changes='p4  changes -u jduan -l | less'
 export LANG=en_US
 
 [ -s "/home/jduan/.scm_breeze/scm_breeze.sh" ] && . "/home/jduan/.scm_breeze/scm_breeze.sh"
+
+# bb anywhere
+function bb () {
+    cd `findup Config`
+    brazil-build $*
+    cd -
+}
