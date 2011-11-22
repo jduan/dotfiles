@@ -1,8 +1,3 @@
-"
-" This has a potential effect on all the following options...
-"
-set nocompatible         " disable vi compatibility
-
 " p4 commands
 nnoremap @p4a :!p4 add %
 " nnoremap @p4e :!p4 edit %
