@@ -110,3 +110,5 @@ function bb () {
     brazil-build $*
     cd -
 }
+
+source ~/env
