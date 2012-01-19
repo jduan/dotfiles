@@ -100,6 +100,9 @@ alias be='bundle exec'
 # p4
 alias p4changes='p4  changes -u jduan -l | less'
 
+# git
+alias gitlg='git lg|head'
+
 export LANG=en_US
 
 [ -s "/home/jduan/.scm_breeze/scm_breeze.sh" ] && . "/home/jduan/.scm_breeze/scm_breeze.sh"
