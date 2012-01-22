@@ -375,3 +375,6 @@ let &cpo = s:cpo_save
 unlet s:cpo_save
 
 " vim:set sw=2 sts=2 ts=8 noet:
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
