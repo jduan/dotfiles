@@ -11,6 +11,7 @@
 # eclipse
 .classpath
 .project
+.settings/
 eclipse-bin/
 eclipse-build/
 
