@@ -321,3 +321,6 @@ map <Leader>n :NERDTreeToggle<CR>
 " use solarized.vim color scheme
 " set background=dark
 " colorscheme solarized
+
+" Press i to enter insert mode, and ii to exit
+:imap ii <Esc>
