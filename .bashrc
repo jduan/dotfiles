@@ -114,7 +114,5 @@ function bb () {
     cd -
 }
 
-source ~/env
-
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/scripts # Add useful scripts
