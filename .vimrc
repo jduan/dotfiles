@@ -322,5 +322,5 @@ map <Leader>n :NERDTreeToggle<CR>
 " set background=dark
 " colorscheme solarized
 
-" Press i to enter insert mode, and ii to exit
-:imap ii <Esc>
+" Press ;; to exit insert mode
+:imap ;; <Esc>
