@@ -25,3 +25,7 @@ alias p4changes='p4  changes -u jduan -l | less'
 
 # git
 alias gitlg='git lg|head'
+
+# tmux
+alias tml='tmux list-sessions'
+alias tma='tmux attach'
