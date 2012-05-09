@@ -43,15 +43,13 @@ fi
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    # . /etc/bash_completion
-    . /usr/local/etc/bash_completion
+    . /etc/bash_completion
 fi
 
 [[ -s "/$HOME/.rvm/scripts/rvm" ]] && source "/$HOME/.rvm/scripts/rvm"
 
 # add git branch name to the shell prompt
-#export PS1='[\u@ \W$(__git_ps1 " (%s)")]\$ '
-export PS1='[\u@ \W]\$ '
+export PS1='[\u@ \W$(__git_ps1 " (%s)")]\$ '
 # show unstaged (*) and staged (+) changes next to the branch name
 export GIT_PS1_SHOWDIRTYSTATE=1
 # show $ next to the branch name if something is stashed
