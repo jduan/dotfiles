@@ -324,3 +324,6 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " Press ;; to exit insert mode
 :imap ;; <Esc>
+
+" turn on cursor line
+set cursorline
