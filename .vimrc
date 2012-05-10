@@ -328,3 +328,6 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " turn on cursor line
 set cursorline
+
+" bufferexplorer: use relative path
+let g:bufExplorerShowRelativePath=1
