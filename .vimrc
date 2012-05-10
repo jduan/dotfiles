@@ -315,6 +315,7 @@ compiler ruby         " Enable compiler support for ruby
 cscope add cscope.out
 
 " NERD_tree
+" Press '\n' to toggle NERDTree
 let mapleader = "\\"
 map <Leader>n :NERDTreeToggle<CR> 
 
