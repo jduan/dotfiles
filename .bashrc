@@ -76,6 +76,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 export LANG=en_US
+export EDITOR=vim
 
 [ -s "/home/jduan/.scm_breeze/scm_breeze.sh" ] && . "/home/jduan/.scm_breeze/scm_breeze.sh"
 
