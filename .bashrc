@@ -89,3 +89,8 @@ function bb () {
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/scripts # Add useful scripts
+
+# Source git auto completion
+if [ -f $HOME/.git-completion.bash ]; then
+	. $HOME/.git-completion.bash
+fi
