@@ -15,7 +15,13 @@ alias egrep='egrep --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias ls='ls --color=tty'
+if [ Darwin = "$(uname 2>/dev/null)" ]; then
+  alias ls='ls -G'
+elif [ Linux = "$(uname 2>/dev/null)" ]; then
+  alias ls='ls --color=tty'
+else
+  echo "!! unknown operation system, check ~/.bash_aliases"
+fi
 
 # bundle
 alias be='bundle exec'
