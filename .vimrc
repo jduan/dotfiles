@@ -97,6 +97,7 @@ set expandtab            " spaces, not tabs!
 set foldcolumn=0         " no fold column
 set foldlevelstart=0     " start with all folds closed
 set formatoptions=r      " r - re-insert comment leader on newline
+set formatprg=par        " use 'par' to format text with 'gq'
 set guioptions+=agimrLt  " make vim act like a gui when started like one
 set hidden               " hide, don't close, undisplayed buffers
 set history=50           " keep 50 lines of command history
