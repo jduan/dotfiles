@@ -332,3 +332,9 @@ set cursorline
 
 " bufferexplorer: use relative path
 let g:bufExplorerShowRelativePath=1
+
+" restore cursor position
+autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
