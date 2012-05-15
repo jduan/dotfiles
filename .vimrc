@@ -13,7 +13,7 @@ map <C-p> :pwd<cr>
 
 set ignorecase " set ic
 set incsearch
-set hlsearch " highlight all matches for the pattern
+" set hlsearch " highlight all matches for the pattern
 " set tabstop=8
 syntax on
 set cindent
