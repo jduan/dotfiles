@@ -6,7 +6,7 @@ alias scx='screen -x'
 alias tf='tail -f'
 
 alias ssh='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
-alias psef='ps -ef | grep -i '
+alias psef='ps -ef | /usr/bin/grep -i '
 alias grep='grep -irn --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
