@@ -26,6 +26,8 @@
 	excludesfile = /home/jduan/.gitignore
 [color]
 	ui = auto
+[color "diff"]
+    meta = yellow
 [github]
 	user = jduan
 	token = 1c29ea8a13206dc84afeb23312fb2daa
