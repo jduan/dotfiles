@@ -338,3 +338,6 @@ autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
+
+" <leader>W to remove all trailing white spaces
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
