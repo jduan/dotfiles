@@ -237,7 +237,7 @@ let perl_synwrite_qf = ! v:shell_error   " use Vi::QuickFix if it can be used
 autocmd BufNewFile,BufRead *.p? compiler perl
 autocmd BufNewFile,BufRead *.t  compiler perl
 
-map <F5> :make<CR>
+map <F5> :CtrlPClearAllCaches<CR>
 " map <F6> :clist<CR>
 " map <F7> :cprevious<CR>
 " map <F8> :cnext<CR>
