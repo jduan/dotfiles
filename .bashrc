@@ -99,3 +99,6 @@ PATH=$HOME/scripts:/usr/local/bin:$PATH # Add useful scripts
 if [ -f $HOME/.git-completion.bash ]; then
 	. $HOME/.git-completion.bash
 fi
+
+# command editing in vi mode
+set -o vi
