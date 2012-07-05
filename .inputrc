@@ -1,2 +1,5 @@
 set completion-ignore-case on
 set completion-prefix-display-length 2
+set editing-mode vi
+set keymap vi
+set convert-meta    on
