@@ -34,4 +34,4 @@ alias gitlg='git lg|head'
 
 # tmux
 alias tml='tmux list-sessions'
-alias tma='tmux attach'
+alias tma='tmux attach -t'
