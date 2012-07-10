@@ -54,15 +54,17 @@ fi
 
 [[ -s "/$HOME/.rvm/scripts/rvm" ]] && source "/$HOME/.rvm/scripts/rvm"
 
+export PS1="[\u@\h:\w]$ "
+
 # add git branch name to the shell prompt
-export PS1='[\u@ \W$(__git_ps1 " (%s)")]\$ '
+#export PS1='[\u@ \W$(__git_ps1 " (%s)")]\$ '
 # show unstaged (*) and staged (+) changes next to the branch name
-export GIT_PS1_SHOWDIRTYSTATE=1
+#export GIT_PS1_SHOWDIRTYSTATE=1
 # show $ next to the branch name if something is stashed
-export GIT_PS1_SHOWSTASHSTATE=1
+#export GIT_PS1_SHOWSTASHSTATE=1
 
 # If not running interactively, don't do anything
-[ -z "$PS1" ] && return
+#[ -z "$PS1" ] && return
 
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
