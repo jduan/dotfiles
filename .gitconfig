@@ -2,16 +2,18 @@
     name = Jingjing Duan
     email = jingjing.duan@hulu.com
 [alias]
-    a = add
-    cm = commit -m
+    a   = add
+    cm  = commit -m
     cma = commit --amend
-    c = commit
-    co = checkout
-    b = branch
-    d = diff
-    ds = diff --staged
-    s = status
-    p = pull --rebase
+    c   = commit
+    co  = checkout
+    b   = branch
+    d   = diff
+    ds  = diff --staged
+    s   = status
+    p   = pull --rebase
+    rh  = reset HEAD^
+    rhh = reset HEAD^ --hard
     unstage = reset HEAD --
     lg = "log --graph --pretty=format:'%Cred%h%Creset\
         -%C(yellow)%d%Creset %s %Cgreen(%cr)\
