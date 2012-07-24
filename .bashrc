@@ -108,3 +108,5 @@ set -o vi
 bind -m vi-insert "\C-l":clear-screen
 bind -m vi-insert "\C-p":history-search-backward
 bind -m vi-insert "\C-n":history-search-forward
+
+source ~/.git_svn_bash_prompt.sh
