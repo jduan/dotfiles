@@ -54,16 +54,16 @@ fi
 
 [[ -s "/$HOME/.rvm/scripts/rvm" ]] && source "/$HOME/.rvm/scripts/rvm"
 
-export PS1="[\u@\h:\w]$ "
+# plain old PS1 from bash
+# export PS1="[\u@\h:\w]$ "
 
-# add git branch name to the shell prompt
+## add git branch name to the shell prompt
 #export PS1='[\u@ \W$(__git_ps1 " (%s)")]\$ '
-# show unstaged (*) and staged (+) changes next to the branch name
+## show unstaged (*) and staged (+) changes next to the branch name
 #export GIT_PS1_SHOWDIRTYSTATE=1
-# show $ next to the branch name if something is stashed
+## show $ next to the branch name if something is stashed
 #export GIT_PS1_SHOWSTASHSTATE=1
-
-# If not running interactively, don't do anything
+## If not running interactively, don't do anything
 #[ -z "$PS1" ] && return
 
 
@@ -109,4 +109,6 @@ bind -m vi-insert "\C-l":clear-screen
 bind -m vi-insert "\C-p":history-search-backward
 bind -m vi-insert "\C-n":history-search-forward
 
-source ~/.git_svn_bash_prompt.sh
+# export PS1='\h:\w\[\033[32m\]$(__git_ps1) \[\033[0m\]$ '
+# source ~/.git_svn_bash_prompt.sh
+source ~/.git-colored-prompt.sh

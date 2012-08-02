@@ -35,3 +35,7 @@ alias gitlg='git lg|head'
 # tmux
 alias tml='tmux list-sessions'
 alias tma='tmux attach -t'
+
+# hulu
+alias deploy='~/workspace/beebee/beebee-client/bin/deploy-code.sh -b ~/workspace/cube-core/build/ps3/ -e en1 -a 10.30.0.104'
+alias chrome='open -a "Google Chrome" --args --disable-web-security --allow-file-access-from-files --allow-file-access --enable-file-cookies'
