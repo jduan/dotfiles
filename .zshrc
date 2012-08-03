@@ -1,8 +1,10 @@
-PATH=$PATH:/usr/local/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$HOME/scripts:$PATH:/usr/local/bin:$HOME/.rvm/bin
 
 source $HOME/.zsh/zshrc.sh
 PROMPT='%B%m%~%b$(git_super_status) %# '
 source $HOME/.sh_aliases
+bindkey -v # vi mode
+setopt NO_NOMATCH # make HEAD^ work in zsh
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _complete _ignored
