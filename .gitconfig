@@ -25,7 +25,7 @@
         --date=relative --all"
 [core]
     editor = vim
-    excludesfile = /home/jduan/.gitignore
+    excludesfile = ~/.gitignore
 [color]
     ui = auto
 [color "diff"]
