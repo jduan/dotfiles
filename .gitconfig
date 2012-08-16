@@ -9,6 +9,9 @@
     co  = checkout
     b   = branch
     d   = diff
+    d1  = diff HEAD^
+    d2  = diff HEAD^^
+    d3  = diff HEAD^^^
     ds  = diff --staged
     s   = status
     p   = pull --rebase
