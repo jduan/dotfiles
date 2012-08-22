@@ -26,6 +26,12 @@
         -%C(yellow)%d%Creset %s %Cgreen(%cr) \
         %C(bold blue)<%an>%Creset' --abbrev-commit \
         --date=relative --all"
+    # git track [remote] [branch]
+    # eg: make the current branch track upstream/master
+    # $ git track upstream master
+    track = "!f(){ branch=$(git name-rev --name-only HEAD);\
+        cmd=\"git branch --set-upstream $branch ${1:-origin}/${2:-$branch}\";\
+        echo $cmd; $cmd;  }; f"
 [core]
     editor = vim
     excludesfile = ~/.gitignore
