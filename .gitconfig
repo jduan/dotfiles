@@ -44,3 +44,10 @@
     token = 1c29ea8a13206dc84afeb23312fb2daa
 [push]
     default = tracking
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+[mergetool]
+	keepBackup = false
+[mergetool "vimdiff"]
+	trustExitCode = true
