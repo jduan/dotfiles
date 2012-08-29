@@ -1,5 +1,3 @@
-PATH=$HOME/scripts:/usr/local/bin:$PATH:$HOME/.rvm/bin
-
 export EDITOR=vim
 export HISTSIZE=5000
 source $HOME/.zsh/zshrc.sh
