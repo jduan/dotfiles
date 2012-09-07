@@ -15,6 +15,9 @@ alias v='f -e vim'           # quick opening files with vim
 
 export EDITOR=vim
 export HISTSIZE=5000
+export SAVEHIST=5000
+setopt SHARE_HISTORY
+export HISTFILE=~/.zsh_history
 source $HOME/.zsh/zshrc.sh
 PROMPT='%B%m%~%b$(git_super_status) %# '
 source $HOME/.sh_aliases
