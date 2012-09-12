@@ -4,6 +4,8 @@
 # vim
 *~
 *.swp
+__Tagbar__
+NERD_tree_1
 
 # git
 .gitignore
