@@ -51,3 +51,5 @@
 	keepBackup = false
 [mergetool "vimdiff"]
 	trustExitCode = true
+[init]
+	templatedir = ~/.git_template
