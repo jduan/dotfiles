@@ -10,9 +10,13 @@
     cp  = cherry-pick
     b   = branch
     d   = diff
+    di  = diff --ignore-all-space
     d1  = diff HEAD^
     d2  = diff HEAD^^
     d3  = diff HEAD^^^
+    d1i = diff HEAD^ --ignore-all-space
+    d2i = diff HEAD^^ --ignore-all-space
+    d3i = diff HEAD^^^ --ignore-all-space
     ds  = diff --staged
     s   = status
     p   = pull --rebase
