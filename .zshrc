@@ -19,7 +19,7 @@ export SAVEHIST=5000
 # setopt SHARE_HISTORY
 export HISTFILE=~/.zsh_history
 source $HOME/.zsh/zshrc.sh
-PROMPT='%B%m%~%b$(git_super_status) $(~/.rvm/bin/rvm-prompt) %# '
+PROMPT='%B%~%b$(git_super_status) %# '
 source $HOME/.sh_aliases
 bindkey -v # vi mode
 setopt NO_NOMATCH # make HEAD^ work in zsh
