@@ -12,6 +12,8 @@
 eval "$(fasd --init auto)"
 # customized aliases
 alias v='f -e vim'           # quick opening files with vim
+# git
+alias g=git
 
 export EDITOR=vim
 export HISTSIZE=5000
