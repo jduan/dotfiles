@@ -18,6 +18,8 @@
     d2i = diff HEAD^^ --ignore-all-space
     d3i = diff HEAD^^^ --ignore-all-space
     ds  = diff --staged
+    p   = pull
+    pr  = pull --rebase
     s   = status
     rh  = reset HEAD^
     rhh = reset HEAD^ --hard
@@ -47,7 +49,7 @@
 	graft = !legit graft \"$@\"
 [core]
     editor = vim
-    excludesfile = ~/.gitignore
+	excludesfile = /Users/jingjing.duan/.gitignore
 [color]
     ui = auto
 [color "diff"]
