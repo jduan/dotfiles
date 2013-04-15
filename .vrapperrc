@@ -1,2 +1,2 @@
 set ignorecase
-imap ;; <Esc>
+imap ii <Esc>

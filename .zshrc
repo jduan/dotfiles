@@ -41,3 +41,4 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
 
 # make tagbar work in vim
 export NODE_PATH=/usr/local/lib/jsctags/
+export PATH=$PATH:/usr/local/sbin/
