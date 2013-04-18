@@ -24,6 +24,8 @@ source $HOME/.zsh/zshrc.sh
 PROMPT='%B%~%b$(git_super_status) %# '
 source $HOME/.sh_aliases
 bindkey -v # vi mode
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
 setopt NO_NOMATCH # make HEAD^ work in zsh
 
 # The following lines were added by compinstall
