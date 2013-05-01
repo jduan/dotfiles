@@ -18,6 +18,8 @@
     d2i = diff HEAD^^ --ignore-all-space
     d3i = diff HEAD^^^ --ignore-all-space
     ds  = diff --staged
+    f   = fetch
+    fa  = fetch --all
     p   = pull
     pr  = pull --rebase
     s   = status
