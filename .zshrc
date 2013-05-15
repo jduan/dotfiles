@@ -48,7 +48,7 @@ export NODE_PATH=/usr/local/lib/jsctags/
 # .zprofile
 # .zshrc
 # .zlogin
-export PATH="/usr/local/heroku/bin:/usr/local/bin/:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/scripts:$PATH"
+export PATH="/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/scripts:$PATH"
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] then
     source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
     rvm use default
