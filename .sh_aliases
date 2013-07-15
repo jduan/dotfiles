@@ -42,3 +42,6 @@ alias tmn='tmux new -s'
 # hulu
 alias deploy='~/workspace/beebee/beebee-client/bin/deploy-code.sh -b ~/workspace/cube-core/build/ps3/ -e en1 -a 10.30.0.104'
 alias chrome='open -a "Google Chrome" --args --disable-web-security --allow-file-access-from-files --allow-file-access --enable-file-cookies'
+
+# sublime
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"

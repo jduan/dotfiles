@@ -20,6 +20,7 @@
     ds  = diff --staged
     f   = fetch
     fa  = fetch --all
+    m   = merge
     p   = pull
     pr  = pull --rebase
     s   = status
