@@ -17,6 +17,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias j='jobs'
+alias t='tree'
 if [ Darwin = "$(uname 2>/dev/null)" ]; then
   alias ls='ls -G'
 elif [ Linux = "$(uname 2>/dev/null)" ]; then
