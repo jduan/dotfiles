@@ -1,6 +1,4 @@
 {
-    expr: true,
-    // This option defines globals available when your code is running inside of
-    // the Node runtime environment.
-    node: true
+    "expr": true,
+    "node": true
 }
