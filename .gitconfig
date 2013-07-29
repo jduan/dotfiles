@@ -3,12 +3,16 @@
     email = jingjing.duan@hulu.com
 [alias]
     a   = add
+    ap  = add -p
     cm  = commit -m
     cma = commit --amend
     c   = commit
     co  = checkout
     cp  = cherry-pick
     b   = branch
+    # list branches ordered by most recent commit
+    bd  = for-each-ref --sort=-committerdate refs/heads/ \
+          --format='%(committerdate:short) %(authorname) %(refname:short)'
     d   = diff
     di  = diff --ignore-all-space
     d1  = diff HEAD~1
