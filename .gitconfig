@@ -34,6 +34,8 @@
     p   = pull
     pr  = pull --rebase
     s   = status
+    r   = rebase
+    ri  = rebase -i
     rh  = reset HEAD^
     rhh = reset HEAD^ --hard
     unstage = reset HEAD --
