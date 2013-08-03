@@ -1,0 +1,12 @@
+# How to use this file?
+# Save a copy of this file under the root directory of your project
+# where you would run ctags to generate tags. Use name ".ctags".
+# Remember to remove these comments too.
+--langdef=js
+--langmap=js:.js
+--regex-js=/([A-Za-z0-9_$]+)[ \t]*[:=][ \t]*function[A-Za-z0-9_$ \t]*\(/\1/f, function, functions/
+--regex-js=/\[[ \t]*['"]([A-Za-z0-9_$ ]+)['"][ \t]*\][ \t]*=[ \t]*function[A-Za-z0-9_$ \t]*\(/\1/f, function, functions/
+--regex-js=/['"]([A-Za-z0-9_$ ]+)['"][ \t]*:[ \t]*function[A-Za-z0-9_$ \t]*\(/\1/f, function, functions/
+--regex-js=/function[ \t]+([A-Za-z0-9_$]+)[ \t]*([^)])/\1/f, function, functions/
+--regex-js=/(\b[A-Z][A-Za-z0-9_$]*)[ \t]*=[ \t]*new[ \t]+/\1/v, variable, variables/
+--regex-js=/(\b[A-Z][A-Z0-9_$]*)[ \t]*=/\1/c, constant, contants/
