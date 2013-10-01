@@ -46,3 +46,6 @@ alias chrome='open -a "Google Chrome" --args --disable-web-security --allow-file
 
 # sublime
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+# python web server
+alias ws='python -m SimpleHTTPServer'
