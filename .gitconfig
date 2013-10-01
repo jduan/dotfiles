@@ -31,13 +31,22 @@
     f   = fetch
     fa  = fetch --all
     m   = merge
+    mf  = merge --ff-only
+    mb  = merge-base
     p   = pull
     pr  = pull --rebase
     s   = status
     r   = rebase
     ri  = rebase -i
+    rc  = rebase --continue
     rh  = reset HEAD^
     rhh = reset HEAD^ --hard
+    s0  = stash show -p stash@{0}
+    s1  = stash show -p stash@{1}
+    s2  = stash show -p stash@{2}
+    s3  = stash show -p stash@{3}
+    s4  = stash show -p stash@{4}
+    s5  = stash show -p stash@{5}
     unstage = reset HEAD --
     lp = log -p
     lg = "log --graph --pretty=format:'%Cred%h%Creset\
@@ -62,6 +71,10 @@
 	sync = !legit sync \"$@\"
 	publish = !legit publish \"$@\"
 	graft = !legit graft \"$@\"
+    edit-unmerged = \
+        "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
+    add-unmerged = \
+        "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
 [core]
     editor = vim
 	excludesfile = /Users/jingjing.duan/.gitignore
