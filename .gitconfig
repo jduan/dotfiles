@@ -41,6 +41,7 @@
     rc  = rebase --continue
     rh  = reset HEAD^
     rhh = reset HEAD^ --hard
+    sl  = stash list
     s0  = stash show -p stash@{0}
     s1  = stash show -p stash@{1}
     s2  = stash show -p stash@{2}
