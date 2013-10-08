@@ -1,6 +1,6 @@
-# ~/.tmuxinator/work.yml
+# ~/.tmuxinator/study.yml
 
-name: work
+name: study
 root: ~/
 
 # Optional tmux socket
@@ -16,18 +16,18 @@ root: ~/
 # tmux_options: -f ~/.tmux.mac.conf
 
 windows:
-  - cube:
+  - htdp:
       layout: even-horizontal
       panes:
-        - cd ~/workspace/cube/core; vim
+        - cd ~/github/htdp; vim
         - # empty shell
-  - mercury_client:
+  - racket:
       layout: even-horizontal
       panes:
-        - cd /Users/jingjing.duan/workspace/cube/core/lib/mercury; vim
+        - racket
         - # empty shell
-  - mercury_service:
+  - sml:
       layout: even-horizontal
       panes:
-        - cd ~/workspace/mercury_service; vim
-        - # empty shell
+        - vim
+        - sml
