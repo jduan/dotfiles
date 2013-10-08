@@ -31,3 +31,8 @@ windows:
       panes:
         - cd ~/workspace/mercury_service; vim
         - # empty shell
+  - tantrum:
+      layout: even-horizontal
+      panes:
+        - cd ~/workspace/doppelganger; vim
+        - # empty shell
