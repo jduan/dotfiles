@@ -48,7 +48,8 @@ alias chrome='open -a "Google Chrome" --args --disable-web-security --allow-file
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # python web server
-alias ws='pushd ~/workspace/cube/core/build/PS4 ; python -m SimpleHTTPServer; popd'
+alias ws3='pushd ~/workspace/cube/core/build/PS3 ; python -m SimpleHTTPServer; popd'
+alias ws4='pushd ~/workspace/cube/core/build/PS4 ; python -m SimpleHTTPServer; popd'
 
 # mercury service
 alias pinger='node examples/apps/pinger/service.js -h mercury.hulu.com -p 443 | tee ~/tmp/pinger.log'
