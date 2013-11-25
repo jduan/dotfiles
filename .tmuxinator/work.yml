@@ -20,19 +20,24 @@ windows:
       layout: even-horizontal
       panes:
         - cd ~/workspace/cube/core; vim
-        - # empty shell
+        - cd ~/workspace/cube/core # empty shell
   - mercury_client:
       layout: even-horizontal
       panes:
-        - cd /Users/jingjing.duan/workspace/cube/core/lib/mercury; vim
-        - # empty shell
+        - cd ~/workspace/cube/core/lib/mercury; vim
+        - cd ~/workspace/cube/core/lib/mercury # empty shell
   - mercury_service:
       layout: even-horizontal
       panes:
         - cd ~/workspace/mercury_service; vim
-        - # empty shell
+        - cd ~/workspace/mercury_service # empty shell
   - tantrum:
       layout: even-horizontal
       panes:
         - cd ~/workspace/doppelganger; vim
-        - # empty shell
+        - cd ~/workspace/doppelganger # empty shell
+  - tantrum-core:
+      layout: even-horizontal
+      panes:
+        - cd ~/workspace/doppelganger-core; vim
+        - cd ~/workspace/doppelganger-core # empty shell
