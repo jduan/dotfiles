@@ -49,6 +49,12 @@
     s3  = stash show -p stash@{3}
     s4  = stash show -p stash@{4}
     s5  = stash show -p stash@{5}
+    sd0 = stash drop stash@{0}
+    sd1 = stash drop stash@{1}
+    sd2 = stash drop stash@{2}
+    sd3 = stash drop stash@{3}
+    sd4 = stash drop stash@{4}
+    sd5 = stash drop stash@{5}
     unstage = reset HEAD --
     lp = log -p
     lg = "log --graph --pretty=format:'%Cred%h%Creset\
