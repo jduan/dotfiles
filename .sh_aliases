@@ -9,6 +9,7 @@ alias ssh='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 alias psef='ps -ef | /usr/bin/grep -i '
 alias psa='ps auxwwwwwwwwww'
 alias grepr='grep -irn --color=auto'
+alias grepi='grep -i --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
@@ -56,4 +57,4 @@ alias pinger='node examples/apps/pinger/service.js -h mercury.hulu.com -p 443 | 
 
 # rlwrap
 alias sml='rlwrap /usr/local/smlnj-110.75/bin/sml'
-alias racket='rlwrap /Applications/Racket_v5.3/bin/racket'
+alias racket='rlwrap /Applications/Racket_v5.3.6/bin/racket'
