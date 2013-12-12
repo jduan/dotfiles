@@ -52,8 +52,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     fi
 fi
 
-[[ -s "/$HOME/.rvm/scripts/rvm" ]] && source "/$HOME/.rvm/scripts/rvm"
-
 # plain old PS1 from bash
 # export PS1="[\u@\h:\w]$ "
 
@@ -112,5 +110,3 @@ bind -m vi-insert "\C-n":history-search-forward
 # export PS1='\h:\w\[\033[32m\]$(__git_ps1) \[\033[0m\]$ '
 # source ~/.git_svn_bash_prompt.sh
 source ~/.git-colored-prompt.sh
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
