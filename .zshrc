@@ -49,3 +49,4 @@ export NODE_PATH=/usr/local/lib/jsctags/
 # .zshrc
 # .zlogin
 export PATH="/Applications/Racket_v5.3/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/scripts:$PATH"
+eval "$(rbenv init -)"
