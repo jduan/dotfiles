@@ -26,3 +26,23 @@ windows:
       panes:
         - cd ~/workspace/mercury_service; vim
         - cd ~/workspace/mercury_service # empty shell
+  - mercury_rb:
+      layout: even-horizontal
+      panes:
+        - cd ~/workspace/mercury_rb; vim
+        - cd ~/workspace/mercury_rb # empty shell
+  - bender:
+      layout: even-horizontal
+      panes:
+        - cd ~/workspace/bender; vim
+        - cd ~/workspace/bender # empty shell
+  - autotest:
+      layout: even-horizontal
+      panes:
+        - cd ~/workspace/auto-test; vim
+        - cd ~/workspace/auto-test # empty shell
+  - blog:
+      layout: even-horizontal
+      panes:
+        - cd ~/github/octopress; vim
+        - cd ~/github/octopress # empty shell
