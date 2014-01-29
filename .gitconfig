@@ -1,6 +1,6 @@
 [user]
     name = Jingjing Duan
-    email = jingjing.duan@hulu.com
+    email = jduan@twitter.com
 [alias]
     a   = add
     ap  = add -p
@@ -57,20 +57,12 @@
     sd5 = stash drop stash@{5}
     unstage = reset HEAD --
     lp = log -p
-    lg = "log --graph --pretty=format:'%Cred%h%Creset\
-        -%C(yellow)%d%Creset %s %Cgreen(%cr)\
-        %C(bold blue)<%an>%Creset' --abbrev-commit\
-        --date=relative"
-    lga = "log --graph --pretty=format:'%Cred%h%Creset \
-        -%C(yellow)%d%Creset %s %Cgreen(%cr) \
-        %C(bold blue)<%an>%Creset' --abbrev-commit \
-        --date=relative --all"
+    lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+    lga = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all"
     # git track [remote] [branch]
     # eg: make the current branch track upstream/master
     # $ git track upstream master
-    track = "!f(){ branch=$(git name-rev --name-only HEAD);\
-        cmd=\"git branch --set-upstream $branch ${1:-origin}/${2:-$branch}\";\
-        echo $cmd; $cmd;  }; f"
+    track = "!f(){ branch=$(git name-rev --name-only HEAD); cmd=\"git branch --set-upstream $branch ${1:-origin}/${2:-$branch}\"; echo $cmd; $cmd;  }; f"
 	switch = !legit switch \"$@\"
 	branches = !legit branches
 	sprout = !legit sprout \"$@\"
@@ -79,13 +71,11 @@
 	sync = !legit sync \"$@\"
 	publish = !legit publish \"$@\"
 	graft = !legit graft \"$@\"
-    edit-unmerged = \
-        "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
-    add-unmerged = \
-        "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+    edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
+    add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
 [core]
     editor = vim
-	excludesfile = /Users/jingjing.duan/.gitignore
+	excludesfile = /Users/jduan/.gitignore
 [color]
     ui = auto
 [color "diff"]
@@ -98,7 +88,6 @@
 [merge]
 	conflictstyle = diff3
 	tool = vimdiff
-	ff = false
 [mergetool]
 	keepBackup = false
 [mergetool "vimdiff"]
