@@ -27,6 +27,13 @@
     d4i = diff HEAD~4 --ignore-all-space
     d5i = diff HEAD~5 --ignore-all-space
     d6i = diff HEAD~6 --ignore-all-space
+    dn  = diff --name-only
+    d1n = diff HEAD~1 --name-only
+    d2n = diff HEAD~2 --name-only
+    d3n = diff HEAD~3 --name-only
+    d4n = diff HEAD~4 --name-only
+    d5n = diff HEAD~5 --name-only
+    d6n = diff HEAD~6 --name-only
     ds  = diff --staged
     f   = fetch
     fa  = fetch --all
@@ -35,12 +42,13 @@
     mb  = merge-base
     p   = pull
     pr  = pull --rebase
-    s   = status
     r   = rebase
     ri  = rebase -i
     rc  = rebase --continue
     rh  = reset HEAD^
     rhh = reset HEAD^ --hard
+    rp  = review post -o
+    rs  = review submit
     sl  = stash list
     sp  = stash pop
     s0  = stash show -p stash@{0}
@@ -55,14 +63,16 @@
     sd3 = stash drop stash@{3}
     sd4 = stash drop stash@{4}
     sd5 = stash drop stash@{5}
+    s   = status
     unstage = reset HEAD --
     lp = log -p
+    ln = log --name-only
     lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
     lga = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all"
     # git track [remote] [branch]
     # eg: make the current branch track upstream/master
     # $ git track upstream master
-    track = "!f(){ branch=$(git name-rev --name-only HEAD); cmd=\"git branch --set-upstream $branch ${1:-origin}/${2:-$branch}\"; echo $cmd; $cmd;  }; f"
+    track = "!f(){ branch=$(git name-rev --name-only HEAD); cmd=\"git branch --set-upstream-to ${1:-origin}/${2:-$branch}\"; echo $cmd; $cmd;  }; f"
 	switch = !legit switch \"$@\"
 	branches = !legit branches
 	sprout = !legit sprout \"$@\"
@@ -76,6 +86,7 @@
 [core]
     editor = vim
 	excludesfile = /Users/jduan/.gitignore
+	usewatchman = true
 [color]
     ui = auto
 [color "diff"]
