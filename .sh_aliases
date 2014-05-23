@@ -10,6 +10,7 @@ alias psef='ps -ef | /usr/bin/grep -i '
 alias psa='ps auxwwwwwwwwww'
 alias grepr='grep -irn --color=auto'
 alias grepi='grep -i --color=auto'
+alias grepc='grep -c --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
