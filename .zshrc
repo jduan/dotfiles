@@ -48,5 +48,5 @@ export NODE_PATH=/usr/local/lib/jsctags/
 # .zprofile
 # .zshrc
 # .zlogin
-export PATH="$HOME/.tools-cache/home/aurora/tools/client/bin/:/Applications/Racket_v5.3/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/scripts:$PATH"
+export PATH="$HOME/.tools-cache/home/aurora/tools/client/bin/:/Applications/Racket_v6.0/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/scripts:$PATH"
 eval "$(rbenv init -)"

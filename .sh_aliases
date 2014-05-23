@@ -61,4 +61,4 @@ alias pinger='node examples/apps/pinger/service.js -h mercury.hulu.com -p 443 | 
 
 # rlwrap
 alias sml='rlwrap /usr/local/smlnj-110.75/bin/sml'
-alias racket='rlwrap /Applications/Racket_v5.3.6/bin/racket'
+alias racket='rlwrap /Applications/Racket\ v6.0/bin/racket'
