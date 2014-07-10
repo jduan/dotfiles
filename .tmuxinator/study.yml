@@ -1,0 +1,32 @@
+# ~/.tmuxinator/study.yml
+
+name: study
+root: ~/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+windows:
+  - htdp:
+      layout: even-horizontal
+      panes:
+        - cd ~/github/htdp; vim
+        - # empty shell
+  - racket:
+      layout: even-horizontal
+      panes:
+        - racket
+        - # empty shell
+  - coursera:
+      layout: even-horizontal
+      panes:
+        - cd ~/coursera/programming_languages/; vim

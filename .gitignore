@@ -22,7 +22,6 @@ test-output/
 
 # p4 and apollo
 .p4config
-build
 apollo-overrides
 backup/
 

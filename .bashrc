@@ -52,8 +52,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     fi
 fi
 
-[[ -s "/$HOME/.rvm/scripts/rvm" ]] && source "/$HOME/.rvm/scripts/rvm"
-
 # plain old PS1 from bash
 # export PS1="[\u@\h:\w]$ "
 

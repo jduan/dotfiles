@@ -48,10 +48,6 @@ export NODE_PATH=/usr/local/lib/jsctags/
 # .zprofile
 # .zshrc
 # .zlogin
-export PATH="/Applications/Racket_v5.3/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/scripts:$PATH"
-if [[ -s "$HOME/.rvm/scripts/rvm" ]] then
-    source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-    rvm use default
-fi
-
+export PATH="$HOME/.tools-cache/home/aurora/tools/client/bin/:/Applications/Racket_v6.0/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/scripts:$PATH"
+eval "$(rbenv init -)"
 eval `dircolors ~/.dircolors`
