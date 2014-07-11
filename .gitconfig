@@ -107,6 +107,7 @@
 # 	templatedir = ~/.git_template
 [diff]
     renames = true
+    renameLimit = 17924
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
