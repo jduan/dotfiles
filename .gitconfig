@@ -103,10 +103,11 @@
 	keepBackup = false
 [mergetool "vimdiff"]
 	trustExitCode = true
-[init]
-	templatedir = ~/.git_template
+# [init]
+# 	templatedir = ~/.git_template
 [diff]
     renames = true
+    renameLimit = 17924
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
