@@ -65,6 +65,7 @@
     sd5 = stash drop stash@{5}
     s   = status
     unstage = reset HEAD --
+    update = "!f(){ branch=$(git name-rev --name-only HEAD); cmd=\"git pull origin $branch\"; echo $cmd; $cmd; }; f"
     lp = log -p
     ln = log --name-only
     lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
