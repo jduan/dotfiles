@@ -50,3 +50,16 @@ export NODE_PATH=/usr/local/lib/jsctags/
 # .zlogin
 export PATH="$HOME/.tools-cache/home/aurora/tools/client/bin/:/Applications/Racket_v6.0/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.rbenv/bin:$HOME/scripts:/Users/jduan/Python/CPython-2.6.9/bin:/Users/jduan/Python/CPython-2.7.8/bin:/Users/jduan/Python/CPython-3.3.5/bin:/Users/jduan/Python/CPython-3.4.1/bin:/Users/jduan/Python/PyPy-2.2.1/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Hit C-z from the shell to trigger 'fg'
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+    BUFFER="fg"
+    zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
