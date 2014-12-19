@@ -87,8 +87,8 @@
     add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
 [core]
     editor = vim
-	excludesfile = /Users/jduan/.gitignore
-	usewatchman = true
+    excludesfile = /Users/jduan/.gitignore
+    usewatchman = true
 [color]
     ui = auto
 [color "diff"]
@@ -99,22 +99,22 @@
 [push]
     default = tracking
 [merge]
-	conflictstyle = diff3
-	tool = vimdiff
+    conflictstyle = diff3
+    tool = vimdiff
 [mergetool]
-	keepBackup = false
+    keepBackup = false
 [mergetool "vimdiff"]
-	trustExitCode = true
+    trustExitCode = true
 # [init]
-# 	templatedir = ~/.git_template
+#   templatedir = ~/.git_template
 [diff]
     renames = true
     renameLimit = 17924
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
 [http]
-	postBuffer = 524288000
+    postBuffer = 524288000
