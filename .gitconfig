@@ -9,9 +9,8 @@
     c   = commit
     co  = checkout
     cp  = cherry-pick
-    b   = branch
     # list branches ordered by most recent commit
-    bd  = for-each-ref --sort=-committerdate refs/heads/ --format="%(authordate:short)%09%(objectname:short)%09%1B[0;33m%(refname:short)%1B[m%09"
+    b   = for-each-ref --sort=-committerdate refs/heads/ --format="%(authordate:short)%09%(objectname:short)%09%1B[0;33m%(refname:short)%1B[m%09"
     d   = diff
     di  = diff --ignore-all-space
     d1  = diff HEAD~1
