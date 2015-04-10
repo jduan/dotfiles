@@ -117,3 +117,5 @@
     trustExitCode = true
 [http]
     postBuffer = 524288000
+[gc]
+    auto = 0
