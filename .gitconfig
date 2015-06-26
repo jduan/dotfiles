@@ -33,6 +33,7 @@
     d4n = diff HEAD~4 --name-only
     d5n = diff HEAD~5 --name-only
     d6n = diff HEAD~6 --name-only
+    dm  = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb; }; f"
     ds  = diff --staged
     f   = fetch
     fa  = fetch --all
