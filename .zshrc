@@ -32,6 +32,10 @@ zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' max-errors 1 not-numeric
 zstyle :compinstall filename '/Users/jingjing.duan/.zshrc'
 
+# Twitter stuff
+export devprod=$HOME/workspace/source/science/src/python/twitter/devprod/
+export devprodt=$HOME/workspace/source/science/tests/python/twitter/devprod/
+
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
