@@ -51,7 +51,7 @@ export NODE_PATH=/usr/local/lib/jsctags/
 # .zprofile
 # .zshrc
 # .zlogin
-export PATH="$HOME/.tools-cache/home/devprod/tools/source/git.Darwin.x86_64/bin:$HOME/.tools-cache/home/aurora/tools/client/bin/:/Applications/Racket_v6.0/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.rbenv/bin:$HOME/bin:$HOME/scripts:/opt/twitter/bin:$PATH"
+export PATH="$HOME/.tools-cache/home/aurora/tools/client/bin/:/Applications/Racket_v6.0/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.rbenv/bin:$HOME/bin:$HOME/scripts:/opt/twitter/bin:$PATH"
 #export PATH="$HOME/.tools-cache/home/aurora/tools/client/bin/:/Applications/Racket_v6.0/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.rbenv/bin:$HOME/scripts:/Users/jduan/Python/CPython-2.6.9/bin:/Users/jduan/Python/CPython-2.7.8/bin:/Users/jduan/Python/CPython-3.3.5/bin:/Users/jduan/Python/CPython-3.4.1/bin:/Users/jduan/Python/PyPy-2.2.1/bin:$PATH"
 eval "$(rbenv init -)"
 

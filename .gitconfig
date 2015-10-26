@@ -38,6 +38,7 @@
     ds  = diff --staged
     f   = fetch
     fa  = fetch --all
+    fo  = fetch origin
     m   = merge
     mf  = merge --ff-only
     mb  = merge-base
