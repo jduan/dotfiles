@@ -14,8 +14,8 @@ eval "$(fasd --init auto)"
 alias v='f -e vim'           # quick opening files with vim
 
 export EDITOR=vim
-export HISTSIZE=5000
-export SAVEHIST=5000
+export HISTSIZE=50000
+export SAVEHIST=50000
 # setopt SHARE_HISTORY
 export HISTFILE=~/.zsh_history
 export PS1='%m %d %# '

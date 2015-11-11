@@ -53,7 +53,7 @@ alias deploy='~/workspace/beebee/beebee-client/bin/deploy-code.sh -b ~/workspace
 alias chrome='open -a "Google Chrome" --args --disable-web-security --allow-file-access-from-files --allow-file-access --enable-file-cookies'
 
 # sublime
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 
 # python web server
 alias ws_ps3='pushd ~/workspace/cube/core/build/PS3 ; python -m SimpleHTTPServer; popd'
