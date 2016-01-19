@@ -47,6 +47,7 @@
     r   = rebase
     ri  = rebase -i
     rc  = rebase --continue
+    rv  = remote -v
     rh  = reset HEAD^
     rhh = reset HEAD^ --hard
     rp  = review post -o
