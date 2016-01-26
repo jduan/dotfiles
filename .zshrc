@@ -32,10 +32,6 @@ zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' max-errors 1 not-numeric
 zstyle :compinstall filename '/Users/jingjing.duan/.zshrc'
 
-# Twitter stuff
-export devprod=$HOME/workspace/source/science/src/python/twitter/devprod/
-export devprodt=$HOME/workspace/source/science/tests/python/twitter/devprod/
-
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
@@ -51,8 +47,7 @@ export NODE_PATH=/usr/local/lib/jsctags/
 # .zprofile
 # .zshrc
 # .zlogin
-export PATH="$HOME/.tools-cache/home/aurora/tools/client/bin/:/Applications/Racket_v6.0/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.rbenv/bin:$HOME/bin:$HOME/scripts:/opt/twitter/bin:$PATH"
-#export PATH="$HOME/.tools-cache/home/aurora/tools/client/bin/:/Applications/Racket_v6.0/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.rbenv/bin:$HOME/scripts:/Users/jduan/Python/CPython-2.6.9/bin:/Users/jduan/Python/CPython-2.7.8/bin:/Users/jduan/Python/CPython-3.3.5/bin:/Users/jduan/Python/CPython-3.4.1/bin:/Users/jduan/Python/PyPy-2.2.1/bin:$PATH"
+export PATH="/Applications/Racket_v6.0/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin$HOME/.rbenv/bin:$HOME/bin:$HOME/scripts:$PATH"
 eval "$(rbenv init -)"
 
 # Hit C-z from the shell to trigger 'fg'
