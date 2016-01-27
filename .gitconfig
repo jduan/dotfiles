@@ -67,6 +67,7 @@
     sd4 = stash drop stash@{4}
     sd5 = stash drop stash@{5}
     s   = status
+    tags = "log --tags --simplify-by-decoration --pretty='format:%ai %d'"
     unstage = reset HEAD --
     parents = log --pretty=%P -n 1
     up = "!f(){ branch=$(git name-rev --name-only HEAD); cmd=\"git pull origin $branch\"; echo $cmd; $cmd; }; f"
