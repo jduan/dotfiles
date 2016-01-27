@@ -43,7 +43,7 @@ alias gg=/usr/bin/git
 
 # tmux
 # tmux -2 forces tmux to assume the shell is using a 256 color terminal
-alias tmux='tmux -2'
+# alias tmux='tmux -2'
 alias tml='tmux list-sessions'
 alias tma='tmux attach -t'
 alias tmn='tmux new -s'
