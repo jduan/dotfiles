@@ -79,6 +79,7 @@
     # eg: make the current branch track upstream/master
     # $ git track upstream master
     track = "!f(){ branch=$(git name-rev --name-only HEAD); cmd=\"git branch --set-upstream-to ${1:-origin}/${2:-$branch}\"; echo $cmd; $cmd;  }; f"
+    untrack = branch --unset-upstream
 	switch = !legit switch \"$@\"
 	branches = !legit branches
 	sprout = !legit sprout \"$@\"
