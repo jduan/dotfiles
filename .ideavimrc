@@ -1,0 +1,3 @@
+source ~/.vimrc
+map b <Nop>
+map <Space> <Nop>
