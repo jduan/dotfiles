@@ -41,6 +41,9 @@ alias g2=/usr/bin/git
 alias G=/usr/bin/git
 alias gg=/usr/bin/git
 
+# gradle
+alias gd=./gradlew
+
 # tmux
 # tmux -2 forces tmux to assume the shell is using a 256 color terminal
 # alias tmux='tmux -2'
