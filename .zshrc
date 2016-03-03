@@ -18,9 +18,9 @@ export HISTSIZE=50000
 export SAVEHIST=50000
 # setopt SHARE_HISTORY
 export HISTFILE=~/.zsh_history
-export PS1='%m %d %# '
-#source $HOME/.zsh/zshrc.sh
-#PROMPT='%B%~%b$(git_super_status) %# '
+# export PS1='%m %d %# '
+source $HOME/.zsh/zshrc.sh
+PROMPT='%B%~%b$(git_super_status) %# '
 source $HOME/.sh_aliases
 bindkey -v # vi mode
 bindkey "^[[A" history-search-backward
