@@ -45,7 +45,8 @@
     mb  = merge-base
     mom = merge origin/master
     p   = pull
-    pr  = pull --rebase
+    # create a new PR from origin/master
+    pr  = !sh -c 'git checkout -b jduan/$1 $(git rev-parse origin/master)' -
     r   = rebase
     ri  = rebase -i
     rc  = rebase --continue
