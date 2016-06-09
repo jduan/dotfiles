@@ -9,6 +9,7 @@
     cma = commit --amend
     c   = commit
     co  = checkout
+    com = checkout origin/master
     cp  = cherry-pick
     b   = branch
     # list branches ordered by most recent commit
@@ -40,6 +41,7 @@
     f   = fetch
     fa  = fetch --all
     fo  = fetch origin
+    fom = fetch origin master
     m   = merge
     mf  = merge --ff-only
     mb  = merge-base
@@ -50,11 +52,11 @@
     r   = rebase
     ri  = rebase -i
     rc  = rebase --continue
+    rr  = "!f(){ remote_branch=$(git rev-parse --abbrev-ref --symbolic-full-name @{u}); git rebase $remote_branch; }; f"
+    dm  = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb; }; f"
     rv  = remote -v
     rh  = reset HEAD^
     rhh = reset HEAD^ --hard
-    rp  = review post -o
-    rs  = review submit
     sl  = stash list
     sp  = stash pop
     s0  = stash show -p stash@{0}
