@@ -118,6 +118,7 @@
 # [init]
 #   templatedir = ~/.git_template
 [diff]
+    compactionHeuristic = true
     renames = true
     renameLimit = 17924
 [difftool "sourcetree"]
@@ -130,3 +131,9 @@
     postBuffer = 524288000
 [gc]
     auto = 0
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
+[interactive]
+    diffFilter = diff-highlight
