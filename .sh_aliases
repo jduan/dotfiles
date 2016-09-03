@@ -42,8 +42,15 @@ alias G=/usr/bin/git
 alias gg=/usr/bin/git
 
 # gradle
-alias gd=./gradlew
+# alias gd=./gradlew
 alias tom='./gradlew :site:deployToBuild && ./gradlew startLocalTomcat'
+function gd () {
+  cwd=$PWD
+  while [ ! -e "$cwd/gradlew" ]; do
+    cwd=`dirname "$cwd"`
+  done
+  "$cwd/gradlew" $1
+}
 
 # tmux
 # tmux -2 forces tmux to assume the shell is using a 256 color terminal
