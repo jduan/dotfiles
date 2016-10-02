@@ -47,8 +47,8 @@ export NODE_PATH=/usr/local/lib/jsctags/
 # .zprofile
 # .zshrc
 # .zlogin
-# export PATH="/Applications/Racket_v6.0/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin$HOME/.rbenv/bin:$HOME/bin:$HOME/scripts:$PATH"
-eval "$(rbenv init -)"
+export PATH="$HOME/.local/bin:$HOME/bin:$HOME/scripts:$PATH"
+# eval "$(rbenv init -)"
 
 # Hit C-z from the shell to trigger 'fg'
 fancy-ctrl-z () {
