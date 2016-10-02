@@ -95,6 +95,7 @@
 	graft = !legit graft \"$@\"
     edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
     add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+    unmerged = diff --name-only --diff-filter=U
 [core]
     editor = vim
     excludesfile = /Users/jduan/.gitignore
