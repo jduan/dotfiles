@@ -19,6 +19,8 @@ export SAVEHIST=50000
 # setopt SHARE_HISTORY
 export HISTFILE=~/.zsh_history
 # export PS1='%m %d %# '
+# Just show the last component of the directory
+# export PS1="%1d$(git_super_status) %# "
 source $HOME/.zsh/zshrc.sh
 PROMPT='%B%~%b$(git_super_status) %# '
 source $HOME/.sh_aliases
