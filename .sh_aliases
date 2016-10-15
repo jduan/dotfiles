@@ -81,3 +81,6 @@ alias racket='rlwrap /Applications/Racket\ v6.0/bin/racket'
 # twitter
 alias p='./pants'
 alias sq_branches='pushd ~/workspace/source; g b -r | egrep "sq_reserved/\d+_jduan"; popd'
+
+# haskell stack
+alias sk=stack
