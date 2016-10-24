@@ -24,6 +24,7 @@ export HISTFILE=~/.zsh_history
 source $HOME/.zsh/zshrc.sh
 PROMPT='%B%~%b$(git_super_status) %# '
 source $HOME/.sh_aliases
+source $HOME/.sh_exports
 bindkey -v # vi mode
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
