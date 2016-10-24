@@ -49,7 +49,7 @@ function gd () {
   while [ ! -e "$cwd/gradlew" ]; do
     cwd=`dirname "$cwd"`
   done
-  "$cwd/gradlew" $1
+  "$cwd/gradlew" $*
 }
 
 # tmux
