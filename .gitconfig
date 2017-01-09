@@ -3,6 +3,8 @@
     email = jduan@fitbit.com
 [alias]
     a   = add
+    # add existing files and new files (root is the root of the repo)
+    aa  = "!f(){ root=$(git rev-parse --show-toplevel); git add $root; }; f"
     ap  = add -p
     au  = add -u
     cm  = commit -m
