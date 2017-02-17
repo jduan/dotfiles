@@ -11,6 +11,8 @@
     cma = commit --amend
     c   = commit
     co  = checkout
+    # checkout all files starting from the root of the repo
+    coa = "!f(){ root=$(git rev-parse --show-toplevel); git checkout $root; }; f"
     com = checkout origin/master
     cp  = cherry-pick
     b   = branch
