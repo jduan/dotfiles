@@ -78,6 +78,7 @@
     sd4 = stash drop stash@{4}
     sd5 = stash drop stash@{5}
     s   = status
+    ss  = status -uno
     tags = "log --tags --simplify-by-decoration --pretty='format:%ai %d'"
     unstage = reset HEAD --
     parents = log --pretty=%P -n 1
