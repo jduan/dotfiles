@@ -1,0 +1,89 @@
+# vi: ft=fish
+# 'screen'
+alias sc 'screen'
+alias scl 'screen -list'
+alias scx 'screen -x'
+
+alias tf 'tail -f'
+
+alias ssh 'TERM=xterm-color ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+alias psef 'ps -ef | /usr/bin/grep -i '
+alias psa 'ps auxwwwwwwwwww'
+alias grepr 'grep -irn --color=auto'
+alias grepi 'grep -i --color=auto'
+alias grepc 'grep -c --color=auto'
+alias fgrep 'fgrep --color=auto'
+alias egrep 'egrep --color=auto'
+
+# some more ls aliases
+alias ll 'ls -alF'
+alias la 'ls -A'
+alias l 'ls -CF'
+alias j 'jobs'
+alias t 'tree'
+
+# bundle
+alias be 'bundle exec'
+
+# p4
+alias p4changes 'p4  changes -u jduan -l | less'
+
+# git
+alias g git
+alias gitlg 'git lg|head'
+alias g2 /usr/bin/git
+alias G /usr/bin/git
+alias gg /usr/bin/git
+
+# gradle
+# alias gd=./gradlew
+alias tom './gradlew :site:deployToBuild; and ./gradlew startLocalTomcat'
+function gd
+  set old_cwd $PWD
+  set cwd $PWD
+  while true
+    if test -e "$cwd/gradlew"
+      break
+    else
+      set cwd (dirname "$cwd")
+    end
+  end
+  # set cmd "$cwd/gradlew" $argv
+  # eval $cmd
+  cd $cwd
+  ./gradlew $argv
+  cd $old_cwd
+end
+
+# tmux
+# tmux -2 forces tmux to assume the shell is using a 256 color terminal
+# alias tmux='tmux -2'
+alias tml 'tmux list-sessions'
+alias tma 'tmux attach -t'
+alias tmn 'tmux new -s'
+
+# hulu
+alias deploy '~/workspace/beebee/beebee-client/bin/deploy-code.sh -b ~/workspace/cube-core/build/ps3/ -e en1 -a 10.30.0.104'
+alias chrome 'open -a "Google Chrome" --args --disable-web-security --allow-file-access-from-files --allow-file-access --enable-file-cookies'
+
+# sublime
+alias subl "/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+# python web server
+alias ws_ps3 'pushd ~/workspace/cube/core/build/PS3 ; python -m SimpleHTTPServer; popd'
+alias ws_ps4 'pushd ~/workspace/cube/core/build/PS4 ; python -m SimpleHTTPServer; popd'
+alias ws_sony 'pushd ~/workspace/cube/core/build/SonyTVBD ; python -m SimpleHTTPServer; popd'
+
+# mercury service
+alias pinger 'node examples/apps/pinger/service.js -h mercury.hulu.com -p 443 | tee ~/tmp/pinger.log'
+
+# rlwrap
+alias sml 'rlwrap /usr/local/smlnj-110.75/bin/sml'
+alias racket 'rlwrap /Applications/Racket\ v6.0/bin/racket'
+
+# twitter
+alias p './pants'
+alias sq_branches 'pushd ~/workspace/source; g b -r | egrep "sq_reserved/\d+_jduan"; popd'
+
+# haskell stack
+alias sk stack
