@@ -39,3 +39,6 @@ coral-generated-src/
 .DS_Store
 
 .log
+
+# fish shell
+.config/fish/fishd*

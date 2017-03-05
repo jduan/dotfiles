@@ -19,7 +19,7 @@ Dir.glob('.*').each do |file|
       puts "WARNING: src_path #{src_path} exists, removing it now!"
       FileUtils.rm_rf(src_path)
     end
-    puts "creating symlink: from #{target_path} to #{src_path}"
+    puts "creating symlink: from #{src_path} to #{target_path}"
     `ln -s #{target_path} #{src_path}`
   end
 end
