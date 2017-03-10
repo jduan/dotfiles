@@ -42,3 +42,4 @@ coral-generated-src/
 
 # fish shell
 .config/fish/fishd*
+.config/htop/
