@@ -14,6 +14,7 @@
     # checkout all files starting from the root of the repo
     coa = "!f(){ root=$(git rev-parse --show-toplevel); git checkout $root; }; f"
     com = checkout origin/master
+    cos = checkout origin/stable
     cp  = cherry-pick
     b   = branch
     # list branches ordered by most recent commit
@@ -50,6 +51,7 @@
     mf  = merge --ff-only
     mb  = merge-base
     mom = merge origin/master
+    mos = merge origin/stable
     p   = pull
     # push branch to origin and track it
     po  = "!f(){ branch=$(git rev-parse --abbrev-ref HEAD); git push --set-upstream origin $branch; }; f"
