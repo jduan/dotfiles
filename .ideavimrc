@@ -1,3 +1,9 @@
-source ~/.vimrc
-map b <Nop>
-map <Space> <Nop>
+" Don't source ~/.vimrc! It will mess things up.
+" map b <Nop>
+" map <Space> <Nop>
+
+" no ignore case when pattern has uppercase
+set smartcase
+
+" Emulated Vim Plugins
+set vim-surround
