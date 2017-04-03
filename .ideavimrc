@@ -5,6 +5,7 @@
 " no ignore case when pattern has uppercase
 set smartcase
 set ignorecase
+set number
 set relativenumber
 
 " Emulated Vim Plugins
