@@ -9,6 +9,8 @@ set number
 set relativenumber
 " highlight matches with last search pattern
 set hlsearch
+" show where search pattern typed so far matches
+set incsearch
 
 " Emulated Vim Plugins
 set vim-surround
