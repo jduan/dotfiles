@@ -4,6 +4,7 @@
 
 " no ignore case when pattern has uppercase
 set smartcase
+set relativenumber
 
 " Emulated Vim Plugins
 set vim-surround
