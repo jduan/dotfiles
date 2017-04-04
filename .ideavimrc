@@ -11,6 +11,8 @@ set relativenumber
 set hlsearch
 " show where search pattern typed so far matches
 set incsearch
+" hit space to turn off highlighted words
+nnoremap <Space> :nohlsearch<cr>
 
 " Emulated Vim Plugins
 set vim-surround
