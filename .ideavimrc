@@ -13,6 +13,8 @@ set hlsearch
 set incsearch
 " hit space to turn off highlighted words
 nnoremap <Space> :nohlsearch<cr>
+" Press ii to exit insert mode
+:imap ii <Esc>
 
 " Emulated Vim Plugins
 set vim-surround
