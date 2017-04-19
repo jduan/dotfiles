@@ -1,4 +1,5 @@
-i kk <Esc>
+" map ii to Esc
+i ii <Esc>
 set incsearch
 
 " Case-insensitive searching.
