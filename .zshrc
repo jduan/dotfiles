@@ -51,7 +51,7 @@ export NODE_PATH=/usr/local/lib/jsctags/
 # .zshrc
 # .zlogin
 export PATH="$HOME/.local/bin:$HOME/bin:$HOME/scripts:$PATH"
-# eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 # Hit C-z from the shell to trigger 'fg'
 fancy-ctrl-z () {
@@ -65,3 +65,7 @@ fancy-ctrl-z () {
 }
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/jduan/.sdkman"
+[[ -s "/Users/jduan/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jduan/.sdkman/bin/sdkman-init.sh"

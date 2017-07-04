@@ -110,3 +110,8 @@ bind -m vi-insert "\C-n":history-search-forward
 # export PS1='\h:\w\[\033[32m\]$(__git_ps1) \[\033[0m\]$ '
 # source ~/.git_svn_bash_prompt.sh
 source ~/.git-colored-prompt.sh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/jduan/.sdkman"
+[[ -s "/Users/jduan/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jduan/.sdkman/bin/sdkman-init.sh"
+source /etc/bashrc_fitbit
