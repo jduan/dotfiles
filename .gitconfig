@@ -109,6 +109,8 @@
     editor = vim
     excludesfile = /Users/jduan/.gitignore
     usewatchman = true
+	precomposeunicode = true
+	sparseCheckout = true
 [color]
     ui = auto
 [color "diff"]
@@ -117,7 +119,7 @@
     user = jduan
     token = 1c29ea8a13206dc84afeb23312fb2daa
 [push]
-    default = tracking
+	default = current
 [merge]
     conflictstyle = diff3
     tool = vimdiff
@@ -147,3 +149,5 @@
     diff = diff-highlight | less
 [interactive]
     diffFilter = diff-highlight
+[rerere]
+	enabled = true
