@@ -123,6 +123,7 @@
 [merge]
     conflictstyle = diff3
     tool = vimdiff
+    ff = no
 [mergetool]
     keepBackup = false
 [mergetool "vimdiff"]
