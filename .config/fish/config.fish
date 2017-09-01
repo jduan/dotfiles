@@ -9,3 +9,6 @@ fish_vi_key_bindings
 
 set up rbenv
 status --is-interactive; and . (rbenv init -|psub)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jingjing_duan/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/jingjing_duan/google-cloud-sdk/path.fish.inc'; else; . '/Users/jingjing_duan/google-cloud-sdk/path.fish.inc'; end; end
