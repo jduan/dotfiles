@@ -1,6 +1,6 @@
 [user]
-    name = Jingjing Duan
-    email = jduan@fitbit.com
+	name = Jingjing Duan
+	email = jingjing.duan@airbnb.com
 [alias]
     a   = add
     # add existing files and new files (root is the root of the repo)
@@ -40,6 +40,8 @@
     d4n = diff HEAD~4 --name-only
     d5n = diff HEAD~5 --name-only
     d6n = diff HEAD~6 --name-only
+    # diff remote branch
+    dr  = "!f(){ remote_branch=$(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)); git diff $remote_branch; }; f"
     dm  = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb; }; f"
     dmn = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb --name-only; }; f"
     ds  = diff --staged
@@ -107,7 +109,7 @@
     unmerged = diff --name-only --diff-filter=U
 [core]
     editor = vim
-    excludesfile = /Users/jduan/.gitignore
+	excludesfile = /Users/jingjing_duan/.gitignore_global
     usewatchman = true
 	precomposeunicode = true
 	sparseCheckout = true
@@ -123,7 +125,7 @@
 [merge]
     conflictstyle = diff3
     tool = vimdiff
-    ff = no
+    # ff = no
 [mergetool]
     keepBackup = false
 [mergetool "vimdiff"]
@@ -135,11 +137,11 @@
     renames = true
     renameLimit = 17924
 [difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path =
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [http]
     postBuffer = 524288000
 [gc]

@@ -44,3 +44,6 @@ coral-generated-src/
 .config/fish/fishd*
 .config/htop/
 .config/hub
+
+# rubocop
+rubocop_cache/
