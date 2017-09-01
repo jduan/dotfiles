@@ -87,3 +87,6 @@ alias sq_branches 'pushd ~/workspace/source; g b -r | egrep "sq_reserved/\d+_jdu
 
 # haskell stack
 alias sk stack
+
+# CLI
+alias findn 'find . -name'
