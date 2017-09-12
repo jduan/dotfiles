@@ -51,6 +51,7 @@
     fom = fetch origin master
     m   = merge
     mf  = merge --ff-only
+    mnf = merge --no-ff
     mb  = merge-base
     mom = merge origin/master
     mos = merge origin/stable
