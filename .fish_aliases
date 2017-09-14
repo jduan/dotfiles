@@ -6,7 +6,7 @@ alias scx 'screen -x'
 
 alias tf 'tail -f'
 
-alias ssh 'TERM=xterm-color ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+# alias ssh 'TERM=xterm-color ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 alias psef 'ps -ef | /usr/bin/grep -i '
 alias psa 'ps auxwwwwwwwwww'
 alias grepr 'grep -irn --color=auto'
