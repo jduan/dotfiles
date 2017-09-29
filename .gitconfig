@@ -44,6 +44,7 @@
     dr  = "!f(){ remote_branch=$(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)); git diff $remote_branch; }; f"
     dm  = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb; }; f"
     dmn = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb --name-only; }; f"
+    dmw = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb -w; }; f"
     ds  = diff --staged
     f   = fetch
     fa  = fetch --all
