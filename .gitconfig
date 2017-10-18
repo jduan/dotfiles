@@ -45,6 +45,8 @@
     dm  = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb; }; f"
     dmn = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb --name-only; }; f"
     dmw = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb -w; }; f"
+    # diff origin/master from user branch without changing out the user branch
+    dmu = !sh -c 'git diff origin/master...$1' -
     ds  = diff --staged
     f   = fetch
     fa  = fetch --all
