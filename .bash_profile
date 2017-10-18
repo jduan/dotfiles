@@ -10,4 +10,3 @@ source /opt/twitter_mde/etc/bash_profile
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export JAVA_HOME=$(/usr/libexec/java_home)
 if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
-source /etc/bashrc_fitbit
