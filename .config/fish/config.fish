@@ -1,3 +1,14 @@
+#########################################################
+# Why do we check if a path has been added to $PATH?
+#
+# Typically, I start a terminal which loads your default shell.
+# That's when this file gets loaded the first time and $PATH is set.
+# Then I start "tmux" inside the shell. tmux inherits all the
+# environment variables, including $PATH, from the parent shell.
+# When tmux launches a fish shell inside it, the fish shell inherits
+# the $PATH env var too. Then the fish shell loads this file again.
+# That's why we don't want to add things to $PATH again.
+#########################################################
 # define a list of paths
 set paths $HOME/github/jduan/misc_scripts $HOME/repos/sysops/optica_tools
 for path in $paths
