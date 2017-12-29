@@ -47,3 +47,6 @@ coral-generated-src/
 
 # rubocop
 rubocop_cache/
+
+# npm
+.config/configstore/update-notifier-npm.json
