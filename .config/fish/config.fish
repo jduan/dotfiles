@@ -1,5 +1,10 @@
-# set -x PATH $PATH /Users/jduan/.local/bin /Users/jduan/bin
-set -x PATH $PATH $HOME/github/jduan/misc_scripts $HOME/repos/sysops/optica_tools
+# define a list of paths
+set paths $HOME/github/jduan/misc_scripts $HOME/repos/sysops/optica_tools
+for path in $paths
+    if not contains "$path" $PATH
+        set -gx PATH "$path" $PATH
+    end
+end
 # set -x JAVA_HOME (/usr/libexec/java_home -v 1.8)
 
 source ~/.fish_aliases
@@ -12,8 +17,13 @@ set up rbenv
 status --is-interactive; and . (rbenv init -|psub)
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jingjing_duan/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/jingjing_duan/google-cloud-sdk/path.fish.inc'; else; . '/Users/jingjing_duan/google-cloud-sdk/path.fish.inc'; end; end
-
+if [ -f '/Users/jingjing_duan/google-cloud-sdk/path.fish.inc' ];
+    if type source > /dev/null;
+        source '/Users/jingjing_duan/google-cloud-sdk/path.fish.inc';
+    else;
+        . '/Users/jingjing_duan/google-cloud-sdk/path.fish.inc';
+    end;
+end
 
 # Nix
 # if [ -f '/nix/var/nix/profiles/default/etc/profile.d/nix-profile.fish' ];
@@ -22,4 +32,9 @@ if [ -f '/Users/jingjing_duan/google-cloud-sdk/path.fish.inc' ]; if type source 
 # End Nix
 
 # Nix workaround
-set -x PATH $HOME/.nix-profile/bin /nix/var/nix/profiles/default/bin $PATH
+set paths $HOME/.nix-profile/bin
+for path in $paths
+    if not contains "$path" $PATH
+        set -gx PATH "$path" $PATH
+    end
+end
