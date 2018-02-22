@@ -49,3 +49,11 @@ for path in $paths
         set -gx PATH "$path" $PATH
     end
 end
+
+# airbnb
+set -gx DATA_DIR $HOME/repos2/data
+set -gx AFDEV_HOST "i-0689772482b5c44fb.inst.aws.airbnb.com"
+# the port you'd like to use to run the local airflow webserver. This should be
+# a number between 49152–65535. Do not use 61903, you should choose a different
+# port
+set -gx AFDEV_PORT 61803
