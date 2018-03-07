@@ -43,12 +43,12 @@ end
 # End Nix
 
 # Nix workaround
-set paths $HOME/.nix-profile/bin
-for path in $paths
-    if not contains "$path" $PATH
-        set -gx PATH "$path" $PATH
-    end
-end
+# set paths $HOME/.nix-profile/bin
+# for path in $paths
+#     if not contains "$path" $PATH
+#         set -gx PATH "$path" $PATH
+#     end
+# end
 
 # airbnb
 set -gx DATA_DIR $HOME/repos2/data
