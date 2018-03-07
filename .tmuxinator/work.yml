@@ -1,53 +1,41 @@
 # ~/.tmuxinator/work.yml
 
-name: work
+name: "work "
 root: ~/
 
 # Optional tmux socket
 # socket_name: foo
 
-# Runs before everything. Use it to start daemons etc.
-# pre: sudo /etc/rc.d/mysqld start
-
-# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-#
-# See https://github.com/gma/dotfiles/commit/85a355350290d930c4c93e390dc4adaf8156d55f
-#
-pre:
- - unset RBENV_VERSION
- - unset RBENV_DIR
-
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
 
 windows:
-  - cube:
-      layout: even-horizontal
+  - tmp:
+      layout: even-vertical
       panes:
-        - cd ~/workspace/cube/core; vim
-        - cd ~/workspace/cube/core # empty shell
-  - mercury_service:
-      layout: even-horizontal
+        - cd ~/
+  - deployboard:
+      layout: even-vertical
       panes:
-        - cd ~/workspace/mercury_service; vim
-        - cd ~/workspace/mercury_service # empty shell
-  - mercury_rb:
-      layout: even-horizontal
+        - cd ~/repos/deployboard
+  - apps:
+      layout: even-vertical
       panes:
-        - cd ~/workspace/mercury_rb; vim
-        - cd ~/workspace/mercury_rb # empty shell
-  - bender:
-      layout: even-horizontal
+        - cd ~/repos/deployboard-apps
+  - airlab:
+      layout: even-vertical
       panes:
-        - cd ~/workspace/bender; vim
-        - cd ~/workspace/bender # empty shell
-  - autotest:
-      layout: even-horizontal
+        - lab sync
+        - lab ssh
+  - chef:
+      layout: even-vertical
       panes:
-        - cd ~/workspace/auto-test; vim
-        - cd ~/workspace/auto-test # empty shell
-  - blog:
-      layout: even-horizontal
+        - cd ~/repos/chef
+  - titanic:
+      layout: even-vertical
       panes:
-        - cd ~/github/octopress; vim
-        - cd ~/github/octopress # empty shell
+        - cd ~/repos/titanic
+  - pry:
+      layout: even-vertical
+      panes:
+        - pry
