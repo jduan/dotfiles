@@ -22,6 +22,10 @@ windows:
       layout: even-vertical
       panes:
         - cd ~/repos/deployboard-apps
+  - titanic:
+      layout: even-vertical
+      panes:
+        - cd ~/repos/titanic
   - airlab:
       layout: even-vertical
       panes:
@@ -31,15 +35,15 @@ windows:
       layout: even-vertical
       panes:
         - cd ~/repos/chef
-  - titanic:
+  - treehouse:
       layout: even-vertical
       panes:
-        - cd ~/repos/titanic
-  - data:
-      layout: even-vertical
-      panes:
-        - cd ~/repos/data; source ENV/bin/activate.fish
+        - cd ~/repos/treehouse
   - pry:
       layout: even-vertical
       panes:
         - pry
+  - ipython:
+      layout: even-vertical
+      panes:
+        - ipython
