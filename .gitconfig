@@ -47,6 +47,8 @@
     dmw = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb -w; }; f"
     # diff origin/master from user branch without changing out the user branch
     dmu = !sh -c 'git diff origin/master...$1' -
+    # from a user branch, diff the merge base from a non-master branch
+    dmb = !sh -c 'git diff origin/$1...HEAD' -
     ds  = diff --staged
     f   = fetch
     fa  = fetch --all
@@ -69,7 +71,6 @@
     # Reset origin hard
     ro  = "!f(){ remote_branch=$(git rev-parse --abbrev-ref --symbolic-full-name @{u}); git reset --hard $remote_branch; }; f"
     rr  = "!f(){ remote_branch=$(git rev-parse --abbrev-ref --symbolic-full-name @{u}); git rebase $remote_branch; }; f"
-    dm  = "!f(){ mb=$(git merge-base HEAD origin/master); git diff $mb; }; f"
     rv  = remote -v
     rh  = reset HEAD^
     rhh = reset HEAD^ --hard
