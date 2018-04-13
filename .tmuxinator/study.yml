@@ -1,6 +1,6 @@
 # ~/.tmuxinator/study.yml
 
-name: study
+name: "study "
 root: ~/
 
 # Optional tmux socket
@@ -16,17 +16,11 @@ root: ~/
 # tmux_options: -f ~/.tmux.mac.conf
 
 windows:
-  - htdp:
+  - swift:
       layout: even-horizontal
       panes:
-        - cd ~/github/htdp; vim
-        - # empty shell
-  - racket:
+        - swift
+  - MonsterTown:
       layout: even-horizontal
       panes:
-        - racket
-        - # empty shell
-  - coursera:
-      layout: even-horizontal
-      panes:
-        - cd ~/coursera/programming_languages/; vim
+        - cd ~/swift/MonsterTown
