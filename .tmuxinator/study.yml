@@ -16,6 +16,8 @@ root: ~/
 # tmux_options: -f ~/.tmux.mac.conf
 
 windows:
+  - tmp:
+      layout: even-horizontal
   - swift:
       layout: even-horizontal
       panes:
