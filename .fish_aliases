@@ -90,3 +90,7 @@ alias sk stack
 
 # CLI
 alias findn 'find . -name'
+
+# fasd
+# quick opening files with vim
+alias v='sf -e vim'
