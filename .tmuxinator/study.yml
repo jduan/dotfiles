@@ -25,4 +25,4 @@ windows:
   - MonsterTown:
       layout: even-horizontal
       panes:
-        - cd ~/swift/MonsterTown
+        - cd ~/swift/BigNerdRanch
