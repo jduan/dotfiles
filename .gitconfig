@@ -50,6 +50,7 @@
     # from a user branch, diff the merge base from a non-master branch
     dmb = !sh -c 'git diff origin/$1...HEAD' -
     ds  = diff --staged
+    empty-commit = "commit --allow-empty -m 'Empty commit'"
     f   = fetch
     fa  = fetch --all
     fo  = fetch origin
