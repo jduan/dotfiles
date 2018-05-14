@@ -21,7 +21,7 @@ windows:
   - apps:
       layout: even-vertical
       panes:
-        - cd ~/repos/deployboard-apps
+        - cd ~/repos2/deployboard-apps
   - titanic:
       layout: even-vertical
       panes:
@@ -34,4 +34,4 @@ windows:
   - chef:
       layout: even-vertical
       panes:
-        - cd ~/repos/chef
+        - cd ~/repos2/chef
