@@ -35,15 +35,3 @@ windows:
       layout: even-vertical
       panes:
         - cd ~/repos/chef
-  - treehouse:
-      layout: even-vertical
-      panes:
-        - cd ~/repos/treehouse
-  - pry:
-      layout: even-vertical
-      panes:
-        - pry
-  - ipython:
-      layout: even-vertical
-      panes:
-        - ipython
