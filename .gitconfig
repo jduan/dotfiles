@@ -66,6 +66,7 @@
     po  = "!f(){ branch=$(git rev-parse --abbrev-ref HEAD); git push --set-upstream origin $branch; }; f"
     # create a new PR from origin/master
     pr  = !sh -c 'git checkout -b jduan/$1 $(git rev-parse origin/master)' -
+    pu  = push --set-upstream
     r   = rebase
     ri  = rebase -i
     rc  = rebase --continue
