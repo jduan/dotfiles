@@ -22,3 +22,7 @@ windows:
       layout: even-horizontal
       panes:
         - cd /Users/jingjing_duan/github/jduan/haskell_book
+  - haskell_book:
+      layout: even-horizontal
+      panes:
+        - cd /Users/jingjing_duan/github/jduan/haskell_book
