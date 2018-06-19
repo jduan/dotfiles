@@ -18,11 +18,7 @@ root: ~/
 windows:
   - tmp:
       layout: even-horizontal
-  - swift:
+  - ghci:
       layout: even-horizontal
       panes:
-        - swift
-  - MonsterTown:
-      layout: even-horizontal
-      panes:
-        - cd ~/swift/BigNerdRanch
+        - cd /Users/jingjing_duan/github/jduan/haskell_book
