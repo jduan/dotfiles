@@ -10,7 +10,12 @@
 # That's why we don't want to add things to $PATH again.
 #########################################################
 # define a list of paths
-set paths $HOME/github/jduan/misc_scripts $HOME/repos2/sysops/optica_tools $HOME/airlab/runtime_gems/tools/bin
+set paths \
+    $HOME/github/jduan/misc_scripts \
+    $HOME/repos2/sysops/optica_tools \
+    $HOME/airlab/runtime_gems/tools/bin \
+    # haskell stack
+    $HOME/.local/bin
 for path in $paths
     if not contains "$path" $PATH
         set -gx PATH "$path" $PATH
