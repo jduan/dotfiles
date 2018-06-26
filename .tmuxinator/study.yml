@@ -18,11 +18,8 @@ root: ~/
 windows:
   - tmp:
       layout: even-horizontal
-  - ghci:
-      layout: even-horizontal
-      panes:
-        - cd /Users/jingjing_duan/github/jduan/haskell_book
   - haskell_book:
-      layout: even-horizontal
+      layout: even-veritcal
       panes:
-        - cd /Users/jingjing_duan/github/jduan/haskell_book
+        - cd /Users/jingjing_duan/github/jduan/haskell_book; vim haskell-book
+        - cd /Users/jingjing_duan/github/jduan/haskell_book; stack ghci
