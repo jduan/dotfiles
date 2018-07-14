@@ -19,7 +19,7 @@ windows:
   - tmp:
       layout: even-horizontal
   - haskell_book:
-      layout: even-veritcal
+      layout: even-horizontal
       panes:
         - cd /Users/jingjing_duan/github/jduan/haskell_book; vim haskell-book
         - cd /Users/jingjing_duan/github/jduan/haskell_book; stack ghci

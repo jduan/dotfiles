@@ -35,3 +35,7 @@ windows:
       layout: even-vertical
       panes:
         - cd ~/repos2/chef
+  - pry:
+      layout: even-vertical
+      panes:
+        - pry
