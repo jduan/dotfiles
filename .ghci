@@ -3,3 +3,6 @@ import IPPrint.Colored
 :set -interactive-print=IPPrint.Colored.cpprint
 :def cp (\_ -> return ":set -interactive-print=IPPrint.Colored.cpprint")
 :def ncp (\_ -> return ":set -interactive-print=print")
+
+-- A lambda prompt with imported modules
+:set prompt "\ESC[1;34m%s\n\ESC[0;34mλ> \ESC[m"
