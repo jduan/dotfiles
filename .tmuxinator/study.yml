@@ -23,3 +23,8 @@ windows:
       panes:
         - cd /Users/jingjing_duan/github/jduan/haskell_book; vim haskell-book
         - cd /Users/jingjing_duan/github/jduan/haskell_book; stack ghci
+  - haskell_sandbox:
+      layout: even-horizontal
+      panes:
+        - cd /Users/jingjing_duan/github/jduan/haskell_book; vim sandbox
+        - cd /Users/jingjing_duan/github/jduan/haskell_book; stack ghci

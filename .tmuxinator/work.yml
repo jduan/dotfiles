@@ -14,7 +14,7 @@ windows:
       layout: even-vertical
       panes:
         - cd ~/
-  - deployboard:
+  - DB:
       layout: even-vertical
       panes:
         - cd ~/repos/deployboard
