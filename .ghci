@@ -7,3 +7,7 @@
 
 -- A lambda prompt with imported modules
 :set prompt "\ESC[1;34m%s\n\ESC[0;34mλ> \ESC[m"
+
+-- hoogle ghci integration
+:def hoogle \x -> return $ ":!hoogle \"" ++ x ++ "\""
+:def doc \x -> return $ ":!hoogle --info \"" ++ x ++ "\""
