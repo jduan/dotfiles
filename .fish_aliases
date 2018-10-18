@@ -61,6 +61,7 @@ end
 alias tml 'tmux list-sessions'
 alias tma 'tmux attach -t'
 alias tmn 'tmux new -s'
+alias tmk 'tmux kill-session -t'
 
 # hulu
 alias deploy '~/workspace/beebee/beebee-client/bin/deploy-code.sh -b ~/workspace/cube-core/build/ps3/ -e en1 -a 10.30.0.104'

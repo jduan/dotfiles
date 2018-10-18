@@ -10,7 +10,9 @@
 # That's why we don't want to add things to $PATH again.
 #########################################################
 # define a list of paths
+export JAVA_HOME=(/usr/libexec/java_home -v 1.8)
 set paths \
+    $JAVA_HOME \
     $HOME/github/jduan/misc_scripts \
     $HOME/repos2/sysops/optica_tools \
     $HOME/airlab/runtime_gems/tools/bin \
