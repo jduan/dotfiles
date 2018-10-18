@@ -11,3 +11,11 @@
 -- hoogle ghci integration
 :def hoogle \x -> return $ ":!hoogle \"" ++ x ++ "\""
 :def doc \x -> return $ ":!hoogle --info \"" ++ x ++ "\""
+
+-- Turn on all warnings
+:set -Wall
+
+-- for ghcid
+-- :set -isrc
+-- :set -itest
+-- :load Main
