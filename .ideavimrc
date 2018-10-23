@@ -18,3 +18,5 @@ nnoremap <Space> :nohlsearch<cr>
 
 " Emulated Vim Plugins
 set vim-surround
+
+set clipboard+=unnamed
