@@ -10,7 +10,9 @@
 # That's why we don't want to add things to $PATH again.
 #########################################################
 # define a list of paths
-export JAVA_HOME=(/usr/libexec/java_home -v 1.8)
+if [ -f '/usr/libexec/java_home' ];
+    export JAVA_HOME=(/usr/libexec/java_home -v 1.8)
+end
 set paths \
     $JAVA_HOME \
     $HOME/github/jduan/misc_scripts \
