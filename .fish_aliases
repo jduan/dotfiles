@@ -35,24 +35,30 @@ alias g2 /usr/bin/git
 alias G /usr/bin/git
 alias gg /usr/bin/git
 
-# gradle
-# alias gd=./gradlew
-alias tom './gradlew :site:deployToBuild; and ./gradlew startLocalTomcat'
+# Gradle
+#
+# This function finds "gradlew" by recursively looking up parent directories
+# function gd
+#   set old_cwd $PWD
+#   set cwd $PWD
+#   while true
+#     if test -e "$cwd/gradlew"
+#       break
+#     else
+#       set cwd (dirname "$cwd")
+#     end
+#   end
+#   # set cmd "$cwd/gradlew" $argv
+#   # eval $cmd
+#   cd $cwd
+#   ./gradlew $argv
+#   cd $old_cwd
+# end
+#
+# This assumes "gradlew" exists at the root of the git repo.
 function gd
-  set old_cwd $PWD
-  set cwd $PWD
-  while true
-    if test -e "$cwd/gradlew"
-      break
-    else
-      set cwd (dirname "$cwd")
-    end
-  end
-  # set cmd "$cwd/gradlew" $argv
-  # eval $cmd
-  cd $cwd
-  ./gradlew $argv
-  cd $old_cwd
+  set cmd (git rev-parse --show-toplevel)/gradlew $argv
+  eval $cmd
 end
 
 # tmux
