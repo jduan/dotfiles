@@ -22,6 +22,8 @@ nnoremap <Space> :nohlsearch<cr>
 " Press ii to exit insert mode
 :inoremap ii <Esc>
 :inoremap <leader>a ->
+:inoremap <C-h> <Left>
+:inoremap <C-l> <Right>
 
 " Emulated Vim Plugins
 set vim-surround
