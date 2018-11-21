@@ -69,3 +69,5 @@ bindkey '^Z' fancy-ctrl-z
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/jduan/.sdkman"
 [[ -s "/Users/jduan/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jduan/.sdkman/bin/sdkman-init.sh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
