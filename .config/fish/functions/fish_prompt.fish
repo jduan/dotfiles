@@ -40,12 +40,14 @@ function fish_prompt
   set last_status $status
 
   set_color $fish_color_cwd
-  printf '%s ' (prompt_pwd)
+  printf '%s' (prompt_pwd)
   set_color normal
 
   set BIG_REPOS treehouse fullhouse airbnb
   if not contains (basename $PWD) $BIG_REPOS
     printf '%s ' (__fish_git_prompt)
+  else
+    printf ' '
   end
 
   set_color normal
