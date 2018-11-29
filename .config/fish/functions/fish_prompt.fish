@@ -43,11 +43,19 @@ function fish_prompt
   printf '%s' (prompt_pwd)
   set_color normal
 
+  # Don't show "git prompt" for large repos!
   set BIG_REPOS treehouse fullhouse airbnb
-  if not contains (basename $PWD) $BIG_REPOS
-    printf '%s ' (__fish_git_prompt)
-  else
+  set is_big_repo false
+  for repo in $BIG_REPOS
+    if string match --regex --quiet $repo $PWD
+      set is_big_repo true
+      break
+    end
+  end
+  if test $is_big_repo = true
     printf ' '
+  else
+    printf '%s ' (__fish_git_prompt)
   end
 
   set_color normal
