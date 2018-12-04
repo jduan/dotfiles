@@ -44,7 +44,7 @@ function fish_prompt
   set_color normal
 
   # Don't show "git prompt" for large repos!
-  set BIG_REPOS treehouse fullhouse airbnb
+  set BIG_REPOS treehouse fullhouse airbnb chef
   set is_big_repo false
   for repo in $BIG_REPOS
     if string match --regex --quiet $repo $PWD
