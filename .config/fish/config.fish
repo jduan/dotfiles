@@ -66,3 +66,6 @@ set -gx AFDEV_HOST "i-0a55744d91bc4533a.inst.aws.airbnb.com"
 # a number between 49152–65535. Do not use 61903, you should choose a different
 # port
 set -gx AFDEV_PORT 61803
+
+# ripgrep
+set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc
