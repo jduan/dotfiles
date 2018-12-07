@@ -66,6 +66,9 @@ set -gx AFDEV_HOST "i-0a55744d91bc4533a.inst.aws.airbnb.com"
 # a number between 49152–65535. Do not use 61903, you should choose a different
 # port
 set -gx AFDEV_PORT 61803
+set -gx arborist $HOME/repos2/treehouse/projects/arborist
+set -gx treehouse $HOME/repos2/treehouse
+set -gx fullhouse $HOME/repos/fullhouse
 
 # ripgrep
 set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc
