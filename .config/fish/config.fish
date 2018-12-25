@@ -21,8 +21,10 @@ set paths \
     # haskell stack
     $HOME/.local/bin
 for path in $paths
-    if not contains "$path" $PATH
-        set -gx PATH "$path" $PATH
+    if test -d "$path"
+        if not contains "$path" $PATH
+            set -gx PATH "$path" $PATH
+        end
     end
 end
 # set -x JAVA_HOME (/usr/libexec/java_home -v 1.8)
