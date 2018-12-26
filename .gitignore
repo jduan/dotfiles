@@ -44,6 +44,7 @@ coral-generated-src/
 .config/fish/fishd*
 .config/htop/
 .config/hub
+.config/airbnb/
 
 # rubocop
 rubocop_cache/
