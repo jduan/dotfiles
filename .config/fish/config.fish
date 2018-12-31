@@ -27,7 +27,13 @@ for path in $paths
         end
     end
 end
-# set -x JAVA_HOME (/usr/libexec/java_home -v 1.8)
+# Linuxbrew
+switch (uname)
+case Linux
+    if [ -d '/home/linuxbrew' ];
+        eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    end
+end
 
 source ~/.fish_aliases
 
