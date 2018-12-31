@@ -42,6 +42,7 @@ coral-generated-src/
 
 # fish shell
 .config/fish/fishd*
+.config/fish/fish_history
 .config/htop/
 .config/hub
 .config/airbnb/
