@@ -70,6 +70,7 @@ end
 # airbnb
 set -gx DATA_DIR $HOME/repos2/data
 set -gx AFDEV_HOST "i-0a55744d91bc4533a.inst.aws.airbnb.com"
+set -gx ONETOUCHGEN_ACCEPT_EULA=yep
 # the port you'd like to use to run the local airflow webserver. This should be
 # a number between 49152–65535. Do not use 61903, you should choose a different
 # port
